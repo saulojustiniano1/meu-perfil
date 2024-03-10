@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  background-color: #7cbef8;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+
+  padding: 1rem 6rem 1rem 1rem;
+}
+
+.header > p {
+  color: #000;
+  font-size: 1.4rem;
+  padding-right: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.header > img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.header > img:hover {
+  border: 0.2rem solid rgb(255, 255, 255);
+  transition: 0.2s;
+}
+
+.main {
+  background-color: rgb(255, 255, 255);
+
+  width: 100%;
+  height: 80rem;
+}
+
+.description-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  width: 50%;
+}
+
+.description-main > h3 {
+  font-size: 2.5rem;
+  margin-block: 2rem;
+}
+
+.description-main > p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.description-main > img {
+  width: 100%;
+  border-radius: 5rem;
+  margin-bottom: 2rem;
+}
+
+.list-main {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+
+  margin: 4rem auto;
+  border-radius: 2rem;
+
+  background-color: #acd5f8;
+  padding: 2.5rem;
+}
+
+.list-main .interest-list h3,
+.list-main .social-list h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.list-main .interest-list ul li,
+.list-main .social-list ul li {
+  list-style: circle;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+ul li > a {
+  color: #000;
+  text-decoration: none;
+}
+
+ul li > a:hover {
+  color: white;
+}
+
+.weather-main {
+  margin-bottom: 2rem;
+}
+
+.weather {
+  display: flex;
+  font-size: 2rem;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-main > h3 {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.weather-main > .weather > img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.main-form {
+  background-color: rgb(108, 178, 240);
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  border-radius: 2rem;
+  width: 30%;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+}
+
+.main-form > h3 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.main-form > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-form > form > label {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.main-form > form > input {
+  background-color: rgb(172, 213, 248);
+
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.main-form > form > input:hover,
+.main-form > form > textarea:hover {
+  background-color: rgb(217, 227, 235);
+  transition: 0.3s;
+}
+
+.main-form > form > textarea {
+  background-color: rgb(172, 213, 248);
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.main-form > form > .send-form {
+  background-color: rgb(172, 213, 248);
+  color: #000;
+  font-size: 5rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 1rem 4rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.main-form > form > .send-form:hover {
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.footer {
+  background-color: rgb(172, 213, 248);
+  color: black;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 15px;
+  text-align: center;
+}
