@@ -5,79 +5,221 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/media-query.css" />
-    <title>Meu Perfil</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <title>Saulo Justiniano</title>
   </head>
   <body>
     <div class="header">
-      <p>Saulo Justiniano</p>
-      <img
-        src="https://github.com/saulojustiniano1.png"
-        alt="Garoto de blusa azul de óculos sorrindo"
-      />
+      <img src="./assets/svg/logo-saulo.svg" alt="Logotipo de um S maiúsculo" />
+      <div class="nav-header">
+        <a href="#">Inicio</a>
+        <a href="#">Projetos</a>
+        <a href="#">Cursos</a>
+        <a href="#">Certificados</a>
+        <a href="#">Redes Sociais</a>
+      </div>
     </div>
     <div class="main">
-      <div class="description-main">
-        <h3>Descrição</h3>
-        <p>
-          Sou Saulo Justiniano, tenho 24 anos, quero ser um profissional na área
-          da tecnologia.
-        </p>
+      <div class="banner-main">
+        <div class="info-banner">
+          <h3>Saulo</h3>
+          <h3>Justiniano</h3>
+          <p>Software Developer</p>
+          <h4>Python / HTML / CSS</h4>
+        </div>
         <img
-          src="./assets/development.png"
-          alt="Pessoas em cima de blocos, alguns com ferramentas de desenvolvimento e outros com ferramentas de design"
+          src="https://github.com/saulojustiniano1.png"
+          alt="Garoto de blusa azul de óculos sorrindo"
+        />
+        <img
+          class="responsive-device"
+          src="./assets/svg/responsive-device.svg"
+          alt="Ícone de um computador"
         />
       </div>
-      <div class="list-main">
-        <div class="interest-list">
-          <h3>Lista de Interesses:</h3>
-          <ul>
-            <li>Jogos Eletrônicos</li>
-            <li>Ciclismo</li>
-            <li>Tecnologia</li>
-          </ul>
-        </div>
-        <div class="social-list">
-          <h3>Redes sociais:</h3>
-          <ul>
-            <li>
-              <a href="https://linkedin.com/in/saulojustiniano" target="_blank"
-                >LinkedIn</a
-              >
-            </li>
-            <li>
-              <a href="https://github.com/saulojustiniano1" target="_blank"
-                >Github</a
-              >
-            </li>
-          </ul>
-        </div>
+      <div class="description-banner">
+        <h3>Olá!</h3>
+        <p>É um prazer ter você por aqui!</p>
+        <p>
+          Eu sou Saulo Justiniano, tenho 24 anos e sou desenvolvedor de software
+          e estou sempre em busca de novos desafios. Atualmente estou estudando
+          Python, HTML e CSS. Além disso, sou apaixonado por jogos eletrônicos e
+          tecnologia.
+        </p>
+        <p>
+          Estou em busca de novas oportunidades e desafios, caso tenha alguma
+          vaga disponível, entre em contato comigo. Sou um entusiasta de novas
+          tecnologias e sempre estou em busca de novos conhecimentos.
+        </p>
       </div>
-      <div class="weather-main">
-        <h3>Clima de patos</h3>
-        <div class="weather">
-          <p>Chuvoso</p>
+      <div class="projects-main">
+        <h3>Confira alguns projetos:</h3>
+        <div class="project-image">
           <img
-            src="assets/cloud-snow.svg"
-            alt="Ícone de nuvem preto e branco carregada com chuva forte"
+            src="./assets/png/projects-take-care.png"
+            alt="Imagem do projeto take care"
+          />
+          <img
+            src="./assets/png/projects-ducks-gaming.png"
+            alt="Imagem do projeto da ducks gaming"
           />
         </div>
       </div>
-      <div class="main-form">
-        <h3>Formulário</h3>
-        <form action="get">
-          <label for="text">Nome:</label>
-          <input type="text" />
-
-          <label for="email">Email:</label>
-          <input type="text" />
-
-          <label for="text">Mensagem:</label>
-          <textarea cols="30" rows="10"></textarea>
-
-          <input class="send-form" type="button" value="Enviar" />
-        </form>
+      <div class="skills-main">
+        <img src="./assets/style-background.png" alt="" />
+        <h3>Hard skills</h3>
+        <div class="hard-skills">
+          <img src="./assets/svg/vscode-overlay.svg" alt="" />
+          <img src="./assets/svg/figma-overlay.svg" alt="" />
+          <img src="./assets/svg/github-overlay.svg" alt="" />
+        </div>
       </div>
-      <div class="footer">2024 - Feito por Saulo Justiniano</div>
+      <div class="curse-main">
+        <h3>Cursos em andamento</h3>
+        <div class="curse-info">
+          <div class="info-1">
+            <h3>Curso em Video:</h3>
+            <ul>
+              <li>Python: 2 mundos</li>
+              <li>HTML5 e CSS3: Iniciante</li>
+              <li>POO em Java</li>
+            </ul>
+          </div>
+          <div class="info-2">
+            <h3>Rocketseat:</h3>
+            <ul>
+              <li>HTML5 e CSS3: Iniciante</li>
+              <li>Java: Introdução</li>
+              <li>C# (Lançamento)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="certifications-main">
+        <h3>Certificações</h3>
+        <div class="certifications-image">
+          <img
+            src="./assets/certifications/ads-experince_simposio-de-ciencia-tecnologia.png"
+            alt="ADS Experience - Simpósio de ciência tecnologia"
+          />
+          <img
+            src="./assets/certifications/ceped_informatica-basica.png"
+            alt="CEPED - informática básica"
+          />
+          <img
+            src="./assets/certifications/certificado-python_o-novo-ingles-uepb.png"
+            alt="Certificado Python - o novo inglês UEPB"
+          />
+          <img
+            src="./assets/certifications/unifip_minicursos-semana-nacional-de-ciencia-e-tecnologia.png"
+            alt="UNIFP - minicursos: semana nacional de ciência e tecnologia"
+          />
+        </div>
+        <div class="certifications-footer">
+          <a href="#">Clique aqui</a>
+          <p>
+            para acompanhar meu <br />
+            desenvolvimento e minhas conquistas!
+          </p>
+        </div>
+      </div>
+      <div class="portfolio-main">
+        <h3>Portfólio</h3>
+        <p>
+          Para conferir mais dos projetos, me acompanhe através dos meus
+          portfólios
+        </p>
+        <div class="portfolio-image">
+          <a href="#">
+            <img
+              src="./assets/svg/github-portfolio.svg"
+              alt="Ícone do GitHub portfolio"
+            />
+          </a>
+          <a href="">
+            <img
+              src="./assets/svg/figma-portfolio.svg"
+              alt="Ícone do Figma portfolio"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="./assets/svg/vercel-portfolio.svg"
+              alt="Ícone da Vercel portfolio"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="form-main">
+        <h3>Formulário</h3>
+        <img
+          class="icon-1"
+          src="./assets/svg/burger-shape-form-gran.svg"
+          alt="Imagem de um hambúrguer de forma geométrica"
+        />
+        <img
+          class="icon-2"
+          src="./assets/svg/burger-shape-form-op.svg"
+          alt="Imagem de um hambúrguer de forma geométrica"
+        />
+        <img
+          class="icon-3"
+          src="./assets/svg/burger-shape-form-peq.svg"
+          alt="Imagem de um hambúrguer de forma geométrica"
+        />
+        <div class="form-block">
+          <form action="get">
+            <label for="text">Nome</label>
+            <input type="text" />
+            <label for="email">Email</label>
+            <input type="text" />
+            <label for="text">Mensagem</label>
+            <textarea cols="30" rows="10"></textarea>
+            <button type="button">Enviar</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="social">
+          <img
+            src="./assets/svg/logo-saulo-white.svg"
+            alt="Ícone de um 'S' maiúsculo"
+          />
+          <div class="social-block">
+            <h3>Redes sociais:</h3>
+            <div class="social-link">
+              <a href="https://github.com/saulojustiniano1" target="_blank">
+                <img
+                  src="./assets/svg/github-square-footer.svg"
+                  alt="Ícone do Discord footer"
+                />
+                <p>saulojustiniano1</p>
+              </a>
+              <a
+                href="https://www.instagram.com/saulojustiniano"
+                target="_blank"
+              >
+                <img
+                  src="./assets/svg/instagram-footer.svg"
+                  alt="Ícone do Instagram footer"
+                />
+                <p>@saulojustiniano</p>
+              </a>
+              <a href="https://linkedin.com/in/saulojustiniano" target="_blank">
+                <img
+                  src="./assets/svg/linkedin-footer.svg"
+                  alt="Ícone do LinkedIn footer"
+                />
+                <p>saulojustiniano</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-end">
+          <img src="./assets/svg/code-footer.svg" alt="Ícone DEV" />
+          <p>Saulo Justiniano - Todos os direitos reservados - 2024</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>

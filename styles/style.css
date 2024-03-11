@@ -18,203 +18,495 @@ body {
   height: 100%;
   width: 100%;
 }
-
+/* ==================================== header ============================= */
 .header {
   display: flex;
-  justify-content: end;
-  align-items: center;
+  justify-content: space-around;
 
-  background-color: #7cbef8;
-  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
-
-  padding: 1rem 6rem 1rem 1rem;
-}
-
-.header > p {
-  color: #000;
-  font-size: 1.4rem;
-  padding-right: 1rem;
-  font-weight: 500;
-  cursor: pointer;
+  background-color: #fff;
+  padding: 2rem;
 }
 
 .header > img {
-  width: 7rem;
-  height: 7rem;
-  border-radius: 100%;
-  cursor: pointer;
+  width: 4rem;
 }
 
-.header > img:hover {
-  border: 0.2rem solid rgb(255, 255, 255);
-  transition: 0.2s;
+.header > .nav-header {
+  display: flex;
+  font-size: 1.4rem;
+  align-items: center;
 }
 
+.header > .nav-header > a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  margin-right: 2rem;
+}
+
+.header > .nav-header > a:hover {
+  color: #3296ee;
+}
+
+/* ====================================== main ============================== */
 .main {
-  background-color: rgb(255, 255, 255);
-
   width: 100%;
   height: 80rem;
 }
 
-.description-main {
+/* =============================== banner-main ============================== */
+.banner-main {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-inline: auto;
-  width: 50%;
+  padding: 3rem;
+
+  background-image: linear-gradient(
+    to right bottom,
+    #acd5f8,
+    #75bbf8,
+    #409ef0,
+    #fff
+  );
 }
 
-.description-main > h3 {
-  font-size: 2.5rem;
+.banner-main > .info-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: 5rem;
+}
+
+.banner-main > .info-banner > h3 {
+  color: #fff;
+  font-size: 5rem;
+  margin-block: 0;
+}
+
+.banner-main > img {
+  width: 24rem;
+  /* margin-right: 15rem; */
+  border-radius: 100%;
+  border: 1rem solid #00000050;
+}
+
+.banner-main > .responsive-device {
+  position: absolute;
+  top: 27rem;
+  left: 117rem;
+  width: 10rem;
+  border: none;
+}
+
+.banner-main > .info-banner > p {
+  color: #1b48db;
+  font-size: 1.4rem;
   margin-block: 2rem;
 }
 
-.description-main > p {
-  font-size: 1.4rem;
-  margin-bottom: 2rem;
-}
-
-.description-main > img {
-  width: 100%;
-  border-radius: 5rem;
-  margin-bottom: 2rem;
-}
-
-.list-main {
-  display: flex;
-  width: 40%;
-  justify-content: space-around;
-
-  margin: 4rem auto;
-  border-radius: 2rem;
-
-  background-color: #acd5f8;
-  padding: 2.5rem;
-}
-
-.list-main .interest-list h3,
-.list-main .social-list h3 {
+.banner-main > .info-banner > h4 {
   font-size: 1.6rem;
-  margin-bottom: 1rem;
+}
+/* =============================== description-main ========================= */
+.description-banner {
+  width: 30%;
+  margin-inline: auto;
 }
 
-.list-main .interest-list ul li,
-.list-main .social-list ul li {
-  list-style: circle;
-  margin-bottom: 1rem;
-  font-size: 1.4rem;
+.description-banner > h3 {
+  color: #3296ee;
+  font-size: 4rem;
+  text-align: center;
+  padding: 2rem;
+  margin-right: 8rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  border-bottom: 0.2rem solid #75bbf8;
 }
 
-ul li > a {
-  color: #000;
-  text-decoration: none;
-}
-
-ul li > a:hover {
-  color: white;
-}
-
-.weather-main {
+.description-banner > p {
+  font-size: 1.6rem;
+  text-align: justify;
   margin-bottom: 2rem;
 }
 
-.weather {
+/* =============================== projects-main ============================ */
+.projects-main {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.projects-main > h3 {
+  color: #3296ee;
+  font-size: 3rem;
+  text-align: start;
+  margin-top: 15rem;
+  margin-left: 30rem;
+  margin-right: 90rem;
+  border-bottom: 0.2rem solid #75bbf8;
+  padding: 2rem;
+}
+
+.projects-main > .project-image > img {
+  width: 49.6vw;
+  margin-inline: auto;
+  opacity: 0.9;
+}
+
+.project-image {
+  background-image: linear-gradient(
+    to right bottom,
+    #acd5f8,
+    #75bbf8,
+    #409ef0,
+    #fff
+  );
   display: flex;
-  font-size: 2rem;
-  font-weight: 700;
+  margin-top: 6rem;
+  /* margin-right: 30rem; */
+}
+
+/* =============================== skills-main ============================== */
+.skills-main {
+  background-image: linear-gradient(
+    to left bottom,
+    #acd5f8,
+    #75bbf8,
+    #409ef0,
+    #fff
+  );
+}
+
+.hard-skills {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.weather-main > h3 {
-  font-size: 2.8rem;
+.hard-skills > img {
+  width: 20vw;
+}
+
+.skills-main > h3 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 2.2rem;
+  margin-left: 30rem;
+  margin-right: 100rem;
+  margin-bottom: 6rem;
+  margin-top: 5rem;
+  border-bottom: 0.2rem solid #fff;
+}
+
+/* ================================ curse-main ============================== */
+.curse-main {
+  margin-bottom: 10rem;
+}
+
+.curse-main > h3 {
+  color: #3296ee;
   text-align: center;
-  margin-bottom: 1.2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 2.2rem;
+  margin-left: 70rem;
+  margin-right: 70rem;
+  margin-bottom: 6rem;
+  margin-top: 5rem;
+  border-bottom: 0.2rem solid #75bbf8;
 }
 
-.weather-main > .weather > img {
-  width: 10rem;
-  height: 10rem;
+.curse-main > .curse-info {
+  display: flex;
+  margin-inline: 70rem;
+  font-size: 2rem;
+  text-decoration: none;
 }
 
-.main-form {
-  background-color: rgb(108, 178, 240);
-  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
-  padding: 2rem;
-  border-radius: 2rem;
-  width: 30%;
+.curse-main > .curse-info > .info-1 {
+  margin-right: 5rem;
+  border-right: 1px solid #6cb2f0;
+}
+
+.curse-main > .curse-info > .info-1 > h3,
+.curse-main > .curse-info > .info-2 > h3 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #3c98e7;
+}
+
+.curse-main > .curse-info > .info-1 > ul > li,
+.curse-main > .curse-info > .info-2 > ul > li {
+  color: #000;
+  font-size: 1.8rem;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+}
+
+/* ============================ certifications-main ========================= */
+.certifications-main {
+  background-image: linear-gradient(
+    to right bottom,
+    #acd5f8,
+    #75bbf8,
+    #409ef0,
+    #fff
+  );
+}
+
+.certifications-main > h3 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 7rem 2.4rem 2.4rem 2.4rem;
+  margin-left: 50rem;
+  margin-right: 80rem;
+  margin-bottom: 6rem;
+  border-bottom: 0.2rem solid #fff;
+}
+
+.certifications-main > .certifications-image {
+  display: grid;
+  grid: 1fr 1fr / 1fr 1fr;
+  grid-area: auto;
+}
+
+.certifications-main > .certifications-image > img {
+  width: 40rem;
   margin-inline: auto;
   margin-bottom: 2rem;
 }
 
-.main-form > h3 {
-  font-size: 2.2rem;
+.certifications-main > .certifications-footer {
+  margin-inline: 50rem;
+  padding-block: 6rem;
   text-align: center;
+}
+
+.certifications-main > .certifications-footer > a {
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 2rem 20rem;
+  border-radius: 1rem;
+  border: none;
+  font-weight: bold;
+  background-color: #1ad89f;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.certifications-main > .certifications-footer > a:hover {
+  background-color: #00ff73;
+  transition: 0.3s;
+}
+
+.certifications-main > .certifications-footer > p {
+  color: #fff;
+  padding: 4rem 1rem 0 1rem;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+/* =============================== portfolio-main =========================== */
+.portfolio-main > h3 {
+  color: #3296ee;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 3rem 2.4rem 2.4rem 2.4rem;
+  margin-left: 70rem;
+  margin-right: 70rem;
+  margin-bottom: 6rem;
+  border-bottom: 0.2rem solid #75bbf8;
+}
+
+.portfolio-main > p {
+  font-size: 1.8rem;
+  margin-inline: 62rem;
   margin-bottom: 2rem;
 }
 
-.main-form > form {
+.portfolio-main > .portfolio-image {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
 }
 
-.main-form > form > label {
+.portfolio-main > .portfolio-image > a > img {
+  width: 15rem;
+  margin-inline: 8rem;
+}
+
+/* ================================ form-main =============================== */
+.form-main {
+  background-color: #6cb2f0;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+  padding: 2rem 2rem 6rem 2rem;
+  margin-inline: auto;
+}
+
+.form-main > h3 {
+  color: #fff;
+
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 3rem 2.4rem 2.4rem 2.4rem;
+  margin-left: 50rem;
+  margin-right: 80rem;
+  margin-bottom: 6rem;
+  border-bottom: 0.2rem solid #fff;
+}
+
+.form-main > .icon-1 {
+  position: absolute;
+  width: 40rem;
+  right: 10rem;
+  top: 430rem;
+}
+
+.form-main > .icon-2 {
+  position: absolute;
+  width: 20rem;
+  left: 10rem;
+  top: 415rem;
+  opacity: 0.5;
+}
+
+.form-main > .icon-3 {
+  position: absolute;
+  width: 25em;
+  left: 10rem;
+  top: 455rem;
+  opacity: 0.5;
+}
+
+.form-main > .form-block {
+  background-color: #ffffff;
+  margin-inline: auto;
+  box-shadow: 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.8rem;
+  width: 30%;
+}
+
+.form-main > .form-block > form {
+  display: grid;
+  grid: 1fr 1fr 1fr;
+  padding: 2rem 2rem 0.2rem 2rem;
+}
+
+.form-main > .form-block > form > label {
   font-size: 1.4rem;
   font-weight: bold;
   margin-bottom: 0.8rem;
 }
 
-.main-form > form > input {
-  background-color: rgb(172, 213, 248);
-
-  font-size: 1.4rem;
-  padding: 0.5rem;
-  margin-bottom: 1.5rem;
-
-  border-radius: 0.5rem;
-  border: none;
-}
-
-.main-form > form > input:hover,
-.main-form > form > textarea:hover {
-  background-color: rgb(217, 227, 235);
-  transition: 0.3s;
-}
-
-.main-form > form > textarea {
-  background-color: rgb(172, 213, 248);
-  font-size: 1.4rem;
+.form-main > .form-block > form > input {
+  background-color: #cfcfcf4d;
+  font-size: 1.6rem;
   padding: 0.5rem;
   margin-bottom: 1.5rem;
   border-radius: 0.5rem;
-  border: none;
+  border: 1.2px solid #c0c0c0;
 }
 
-.main-form > form > .send-form {
-  background-color: rgb(172, 213, 248);
-  color: #000;
-  font-size: 5rem;
+.form-main > .form-block > form > input:focus,
+.form-main > .form-block > form > textarea:focus {
+  border: 2.4px solid #1ad89f;
+  background-color: #1ad89f11;
+  outline: 0;
+}
+
+.form-main > .form-block > form > button {
+  background-color: #1ad89f;
+  color: #fff;
   font-weight: bold;
-  font-size: 1.4rem;
-  text-align: center;
-  padding: 1rem 4rem;
+  font-size: 1.6rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
   border-radius: 0.5rem;
+  margin-inline: 15rem;
   border: none;
   cursor: pointer;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
 }
 
-.main-form > form > .send-form:hover {
-  background-color: #fff;
-  transition: 0.3s;
+.form-main > .form-block > form > button:hover {
+  background-color: #00ff73;
 }
 
+.form-main > .form-block > form > textarea {
+  background-color: #cfcfcf4d;
+  border: 1.2px solid #c0c0c0;
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+/* ================================== footer ================================ */
 .footer {
-  background-color: rgb(172, 213, 248);
+  background-color: #acd5f8;
   color: black;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-weight: bold;
-  padding: 15px;
+  padding: 6rem 0 3rem 0;
   text-align: center;
+}
+
+.footer > .social {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer > .social > .social-block > .social-link {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+}
+
+.footer > .social > .social-block > .social-link > a {
+  color: #000;
+  font-size: 1.4rem;
+  padding-inline: 1.4rem;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.footer > .social > .social-block > .social-link > a > img {
+  width: 5rem;
+  margin-inline: 0.5rem;
+}
+
+.footer > .social > .social-block > h3 {
+  color: #000;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.footer > .social > img {
+  width: 5rem;
+  margin-inline: 1rem;
+}
+.footer > .footer-end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+  padding-top: 3.3rem;
+  border-top: 0.2rem solid #fff;
+}
+
+.footer > .footer-end > img {
+  width: 2.5rem;
+  margin-inline: 0.3rem;
+}
+
+.footer > .footer-end > p {
+  color: #000;
+  font-size: 1.4rem;
 }

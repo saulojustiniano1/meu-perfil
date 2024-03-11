@@ -10,31 +10,110 @@
   Grandes Telas: acima de 1200px
 */
 
-/* Small Devices */
-@media (max-width: 600px) {
+@media (min-width: 600px) and (max-width: 1024px) {
   :root {
-    font-size: 50%;
+    font-size: 40%;
   }
 
-  .user > h2 {
-    font-size: 2.5rem;
-  }
-
-  .user > p {
+  .header > .nav-header > a {
     font-size: 1.6rem;
   }
 
-  .user > img {
-    width: 40rem;
-    height: 40rem;
-    border-radius: 100%;
+  .curse-main > h3 {
+    padding: 2rem;
+    margin-left: 50rem;
+    margin-right: 50rem;
   }
 
-  .main > h3 {
-    font-size: 1.4rem;
+  .banner-main > .responsive-device {
+    position: absolute;
+    top: 28rem;
+    left: 100rem;
   }
 
-  .main > p {
-    font-size: 1.2rem;
+  .skills-main > h3 {
+    margin-left: 30rem;
+    margin-right: 80rem;
+  }
+
+  .main > .certifications-main > h3 {
+    margin-left: 40rem;
+    margin-right: 60rem;
+  }
+
+  .curse-main > .curse-info {
+    margin-inline: 55rem;
+  }
+
+  .curse-main > .curse-info > .info-1 {
+    margin-right: 5rem;
+    border-right: 1px solid #3296ee;
+  }
+
+  .curse-main > .curse-info > .info-1 > h3,
+  .curse-main > .curse-info > .info-2 > h3 {
+    color: #3296ee;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
+
+  .curse-main > .curse-info > .info-1 > ul > li,
+  .curse-main > .curse-info > .info-2 > ul > li {
+    color: #000;
+    font-size: 1.8rem;
+
+    padding: 1rem;
+  }
+
+  .curse-main > .curse-info > .info-1 > ul {
+    color: #000;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .portfolio-main > h3 {
+    margin-left: 50rem;
+    margin-right: 50rem;
+  }
+
+  .form-main > h3 {
+    margin-left: 50rem;
+    margin-right: 50rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  :root {
+    font-size: 40%;
+  }
+
+  .form-main > .icon-2 {
+    position: absolute;
+    width: 20rem;
+    right: 10rem;
+    top: 430rem;
+  }
+
+  .banner-main > .responsive-device {
+    position: absolute;
+    top: 28rem;
+    left: 132rem;
+  }
+
+  .curse-main > h3 {
+    padding: 2rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .main > .certifications-main > h3 {
+    margin-left: 70rem;
+    margin-right: 90rem;
+  }
+
+  .form-main > h3 {
+    margin-left: 75rem;
+    margin-right: 80rem;
   }
 }
