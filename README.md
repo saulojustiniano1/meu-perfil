@@ -24,7 +24,9 @@
 
 ### 💻 Projeto
 
-**Meu perfil** - é um projeto que tem como objetivo mostrar um pouco sobre mim, minhas habilidades e projetos que já desenvolvi. Desenvolvido com HTML5 e CSS3. Disciplina de Desenvolvimento Web.
+**Meu perfil** - é um projeto que tem como objetivo mostrar um pouco sobre mim,
+minhas habilidades e projetos que já desenvolvi. Desenvolvido com HTML5 e CSS3.
+Disciplina de Desenvolvimento Web.
 
 **🚀Tecnologias:**
 
